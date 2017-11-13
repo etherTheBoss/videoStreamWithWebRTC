@@ -13,6 +13,7 @@
         audio:true
     }, 
     function(stream){
+        console.log(stream);
         video.src = vendorUrl.createObjectURL(stream);
         video.play();
     },
