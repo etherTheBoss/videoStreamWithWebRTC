@@ -3,7 +3,7 @@
     vendorUrl = window.URL || window.webkitURL;
 
     navigator.getMedia =    navigator.getUserMedia ||
-                            webKitGetUserMedia||
+                            navigator.webKitGetUserMedia||
                             navigator.mozGetUserMedia||
                             navigator.msGetUserMedia;
 
@@ -13,7 +13,7 @@
         audio:true
     }, 
     function(stream){
-        video.src = vendorUrl.createObject(stream);
+        video.src = vendorUrl.createObjectURL(stream);
         video.play();
     },
     function(error){
