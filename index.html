@@ -25,36 +25,23 @@
 
   <base target="_blank">
 
-  <title>MediaStream Recording</title>
+  <title>Vcv</title>
 
   <link rel="icon" sizes="192x192" href="images/webrtc-icon-192x192.png">
-  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/r_main.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
-<body>
-
-  <div id="container">
-
-    <h1>Live CV video recording</h1>
-
-    <video id="gum" autoplay muted></video>
-    <video id="recorded" loop controls></video>
-
-    <div>
-      <button id="record" disabled>Start Recording</button>
-      <button id="play" disabled>Play</button>
-      <button id="download" disabled>Download</button>
-    </div>
+<body  >
+  <div id="recorder">
 
   </div>
-
-  <!-- include adapter for srcObject shim -->
-  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="js/etherPlugin.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/lib/ga.js"></script>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+
+
 
 </body>
 </html>
