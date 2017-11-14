@@ -1,8 +1,8 @@
 
 
 var etherRecorder=document.getElementById('recorder');
-var videoEther = document.createElement('video');
 
+var videoEther = document.createElement('video');
 videoEther.setAttribute('id', 'gum');
 videoEther.setAttribute('autoplay', true);
 videoEther.setAttribute('muted', true);
@@ -34,8 +34,10 @@ buttonDownload.setAttribute('disabled', true);
 
 var buttonRecordtextnode = document.createTextNode("Start Recording");
 buttonRecord.appendChild(buttonRecordtextnode);
+
 var buttonPlaytextnode = document.createTextNode("Play");
 buttonPlay.appendChild(buttonPlaytextnode);
+
 var buttonDownloadtextnode = document.createTextNode("Download");
 buttonDownload.appendChild(buttonDownloadtextnode);
 
